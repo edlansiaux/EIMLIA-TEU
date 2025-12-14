@@ -382,7 +382,7 @@ distributions = pipeline.export_distributions('distributions.json')
 
 ## Support
 
-- **Issues**: https://github.com/chu-lille/eimlia-teu/issues
+- **Issues**: https://github.com/edlansiaux/eimlia-teu/issues
 - **Email**: edouard1.lansiaux@chu-lille.fr
 - **Documentation**: https://eimlia.readthedocs.io
 
