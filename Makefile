@@ -1,4 +1,4 @@
-# EIMLIA-3M-TEU Makefile
+# EIMLIA-TEU Makefile
 # ======================
 
 .PHONY: help install install-dev test lint format clean docker-build docker-run api train simulate
