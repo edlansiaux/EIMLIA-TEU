@@ -1,9 +1,9 @@
-# Configuration par défaut EIMLIA-3M-TEU
+# Configuration par défaut EIMLIA-TEU
 # ========================================
 
 # Général
 project:
-  name: "EIMLIA-3M-TEU"
+  name: "EIMLIA-TEU"
   version: "1.0.0"
   description: "Étude d'Impact des Modèles d'IA sur le triage aux urgences"
 
