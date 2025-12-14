@@ -1,4 +1,4 @@
-# Documentation API EIMLIA-3M-TEU
+# Documentation API EIMLIA-TEU
 
 ## Base URL
 
