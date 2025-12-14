@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Setup script for EIMLIA-3M-TEU
+Setup script for EIMLIA-TEU
 """
 
 from setuptools import setup, find_packages
@@ -22,17 +22,17 @@ else:
     requirements = []
 
 setup(
-    name="eimlia-3m-teu",
+    name="eimlia-teu",
     version="1.0.0",
     author="CHU Lille - Équipe EIMLIA",
     author_email="eimlia@chu-lille.fr",
     description="Étude d'Impact des Modèles de Langage et d'IA sur le triage aux urgences",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/chu-lille/eimlia-3m-teu",
+    url="https://github.com/chu-lille/eimlia-teu",
     project_urls={
         "Documentation": "https://eimlia.readthedocs.io",
-        "Bug Tracker": "https://github.com/chu-lille/eimlia-3m-teu/issues",
+        "Bug Tracker": "https://github.com/chu-lille/eimlia-teu/issues",
     },
     classifiers=[
         "Development Status :: 4 - Beta",
