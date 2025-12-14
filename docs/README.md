@@ -1,4 +1,4 @@
-# Documentation EIMLIA-3M-TEU
+# Documentation EIMLIA-TEU
 
 ## Table des matières
 
@@ -17,7 +17,7 @@
 
 ### Contexte
 
-L'étude EIMLIA-3M-TEU (Étude d'Impact des Modèles de Langage et d'Intelligence Artificielle - 3 Modèles - Triage aux Urgences) vise à évaluer l'impact de l'assistance IA sur le triage aux urgences.
+L'étude EIMLIA-TEU vise à évaluer l'impact de l'assistance IA sur le triage aux urgences.
 
 ### Objectifs
 
@@ -54,7 +54,7 @@ L'étude EIMLIA-3M-TEU (Étude d'Impact des Modèles de Langage et d'Intelligenc
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        EIMLIA-3M-TEU                            │
+│                        EIMLIA-TEU                            │
 ├─────────────────────────────────────────────────────────────────┤
 │  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐              │
 │  │ TRIAGEMASTER│  │URGENTIAPARSE│  │  EMERGINET  │   Modèles IA │
@@ -84,7 +84,7 @@ L'étude EIMLIA-3M-TEU (Étude d'Impact des Modèles de Langage et d'Intelligenc
 ### Structure du code
 
 ```
-eimlia-3m-teu/
+eimlia-teu/
 ├── src/
 │   ├── models/           # Modèles IA
 │   │   ├── triagemaster.py
@@ -118,8 +118,8 @@ eimlia-3m-teu/
 
 ```bash
 # Cloner le repository
-git clone https://github.com/chu-lille/eimlia-3m-teu.git
-cd eimlia-3m-teu
+git clone https://github.com/chu-lille/eimlia-teu.git
+cd eimlia-teu
 
 # Créer un environnement virtuel
 python -m venv venv
@@ -382,8 +382,8 @@ distributions = pipeline.export_distributions('distributions.json')
 
 ## Support
 
-- **Issues**: https://github.com/chu-lille/eimlia-3m-teu/issues
-- **Email**: eimlia@chu-lille.fr
+- **Issues**: https://github.com/chu-lille/eimlia-teu/issues
+- **Email**: edouard1.lansiaux@chu-lille.fr
 - **Documentation**: https://eimlia.readthedocs.io
 
 ## Licence
