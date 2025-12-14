@@ -1,5 +1,5 @@
 """
-EIMLIA-3M-TEU
+EIMLIA-TEU
 =============
 
 Étude d'Impact des Modèles d'IA sur le Lean management et l'Interprétabilité
@@ -24,8 +24,8 @@ Usage:
 """
 
 __version__ = "1.0.0"
-__author__ = "Équipe EIMLIA - CHU de Lille"
-__email__ = "eimlia@chu-lille.fr"
+__author__ = "Équipe STaRT-AI - CHU de Lille"
+__email__ = "edouard1.lansiaux@chu-lille.fr"
 __license__ = "MIT"
 
 from src.models import TRIAGEMASTER, URGENTIAPARSE, EMERGINET
