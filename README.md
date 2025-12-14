@@ -1,11 +1,11 @@
-# EIMLIA-3M-TEU 🏥
+# EIMLIA-TEU 🏥
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![SimPy](https://img.shields.io/badge/SimPy-4.0+-green.svg)](https://simpy.readthedocs.io/)
 [![Mesa](https://img.shields.io/badge/Mesa-2.0+-orange.svg)](https://mesa.readthedocs.io/)
 
-> **Étude d'Impact des Modèles d'IA sur le Lean management et l'Interprétabilité du triage des Admissions aux urgences - 3 Modèles - Triage des Entrées aux Urgences**
+> **Étude des Impacts Médico-Financiers, Logistiques des systèmes d’Intelligence Artificielle pour le Triage à l’Entrée des Urgences**
 
 Simulation prospective comparant 3 modèles d'IA pour le triage aux urgences (FRENCH) sur 600 000 patients virtuels. Stack 100% open source Python.
 
@@ -64,8 +64,8 @@ Comparer l'impact de 3 architectures d'IA de triage sur :
 
 ```bash
 # Cloner le repository
-git clone https://github.com/votre-org/eimlia-3m-teu.git
-cd eimlia-3m-teu
+git clone https://github.com/votre-org/eimlia-teu.git
+cd eimlia-teu
 
 # Créer l'environnement virtuel
 python -m venv .venv
@@ -116,7 +116,7 @@ resultats = orchestrateur.executer_tous_scenarios()
 ## 📁 Structure du projet
 
 ```
-eimlia-3m-teu/
+eimlia-teu/
 ├── src/
 │   ├── models/           # 3 modèles IA (TRIAGEMASTER, URGENTIAPARSE, EMERGINET)
 │   ├── simulation/       # SimPy (DES) + Mesa (SMA)
