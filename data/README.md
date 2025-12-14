@@ -1,6 +1,6 @@
-# Données EIMLIA-3M-TEU
+# Données EIMLIA-TEU
 
-Ce répertoire contient les données pour l'étude EIMLIA-3M-TEU.
+Ce répertoire contient les données pour l'étude EIMLIA-TEU.
 
 ## Structure attendue
 
