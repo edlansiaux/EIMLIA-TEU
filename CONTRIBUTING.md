@@ -1,12 +1,12 @@
 # Guide de contribution
 
-Merci de votre intérêt pour contribuer à EIMLIA-3M-TEU !
+Merci de votre intérêt pour contribuer à EIMLIA-TEU !
 
 ## Comment contribuer
 
 ### Signaler un bug
 
-1. Vérifiez que le bug n'a pas déjà été signalé dans les [Issues](https://github.com/chu-lille/eimlia-3m-teu/issues)
+1. Vérifiez que le bug n'a pas déjà été signalé dans les [Issues](https://github.com/chu-lille/eimlia-teu/issues)
 2. Créez une nouvelle issue avec:
    - Une description claire du problème
    - Les étapes pour reproduire
@@ -105,7 +105,7 @@ def ma_fonction(param: str) -> int:
 ## Structure du projet
 
 ```
-eimlia-3m-teu/
+eimlia-teu/
 ├── src/
 │   ├── models/        # Modèles IA
 │   ├── simulation/    # Simulation hybride
@@ -127,7 +127,7 @@ eimlia-3m-teu/
 
 ## Questions?
 
-- Ouvrez une [Discussion](https://github.com/chu-lille/eimlia-3m-teu/discussions)
+- Ouvrez une [Discussion](https://github.com/chu-lille/eimlia-teu/discussions)
 - Contactez: eimlia@chu-lille.fr
 
 ## Licence
