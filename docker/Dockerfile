@@ -4,9 +4,9 @@
 FROM python:3.10-slim
 
 # Métadonnées
-LABEL maintainer="eimlia@chu-lille.fr"
+LABEL maintainer="edouard1.lansiaux@chu-lille.fr"
 LABEL version="1.0.0"
-LABEL description="EIMLIA-3M-TEU - Simulation IA triage urgences"
+LABEL description="EIMLIA-TEU - Simulation IA triage urgences"
 
 # Variables d'environnement
 ENV PYTHONDONTWRITEBYTECODE=1
