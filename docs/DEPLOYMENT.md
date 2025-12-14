@@ -1,4 +1,4 @@
-# Guide de Déploiement EIMLIA-3M-TEU
+# Guide de Déploiement EIMLIA-TEU
 
 ## Prérequis
 
@@ -12,8 +12,8 @@
 ### 1. Cloner le repository
 
 ```bash
-git clone https://github.com/votre-org/eimlia-3m-teu.git
-cd eimlia-3m-teu
+git clone https://github.com/votre-org/eimlia-teu.git
+cd eimlia-teu
 ```
 
 ### 2. Créer l'environnement virtuel
@@ -422,4 +422,4 @@ docker-compose up -d
 ### Contact support
 
 - Email: support@eimlia.fr
-- Issues: https://github.com/votre-org/eimlia-3m-teu/issues
+- Issues: https://github.com/votre-org/eimlia-teu/issues
