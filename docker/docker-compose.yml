@@ -1,0 +1,67 @@
+# EIMLIA-3M-TEU Docker Compose
+# =============================
+
+version: '3.8'
+
+services:
+  # API principale
+  api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: eimlia-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../data:/app/data
+      - ../models:/app/models
+      - ../results:/app/results
+      - ../logs:/app/logs
+    environment:
+      - PYTHONPATH=/app
+      - LOG_LEVEL=INFO
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # Monitoring Prometheus (optionnel)
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: eimlia-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    depends_on:
+      - api
+    restart: unless-stopped
+    profiles:
+      - monitoring
+
+  # Grafana (optionnel)
+  grafana:
+    image: grafana/grafana:latest
+    container_name: eimlia-grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+    profiles:
+      - monitoring
+
+volumes:
+  grafana-data:
+
+networks:
+  default:
+    name: eimlia-network

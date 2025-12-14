@@ -1,0 +1,122 @@
+# Configuration par défaut EIMLIA-3M-TEU
+# ========================================
+
+# Général
+project:
+  name: "EIMLIA-3M-TEU"
+  version: "1.0.0"
+  description: "Étude d'Impact des Modèles d'IA sur le triage aux urgences"
+
+# Données
+data:
+  path: "data/"
+  target_col: "CCMU"
+  text_col: "Entretien"
+  ignore_cols:
+    - "FRENCH inf"
+  
+  numerical_features:
+    - "Age"
+    - "FC"
+    - "PAS"
+    - "PAD"
+    - "SpO2"
+    - "Temperature"
+    - "EVA"
+    - "ShockIndex"
+    - "O2"
+    - "Sexe_num"
+
+# Modèles
+models:
+  # TRIAGEMASTER
+  triagemaster:
+    doc2vec_dim: 100
+    hidden_dims: [128, 64]
+    dropout: 0.3
+    lr: 0.001
+    batch_size: 32
+    epochs: 100
+    patience: 10
+  
+  # URGENTIAPARSE
+  urgentiaparse:
+    bert_model: "flaubert/flaubert_base_cased"
+    fine_tune_epochs: 3
+    max_length: 128
+    batch_size: 16
+    lr: 2e-5
+    xgb_max_depth: 6
+    xgb_n_estimators: 200
+  
+  # EMERGINET
+  emerginet:
+    bert_model: "flaubert/flaubert_base_cased"
+    max_length: 128
+    hidden_dim: 256
+    latent_dim: 128
+    vicreg_weight: 0.1
+    batch_size: 16
+    epochs: 50
+    lr: 1e-4
+    patience: 10
+
+# Simulation
+simulation:
+  duree_jours: 180
+  random_seed: 42
+  
+  ressources:
+    nb_box_triage: 3
+    nb_box_consultation: 8
+    nb_lits_uhcd: 12
+    nb_scanners: 2
+    nb_radios: 3
+    nb_iao: 3
+    nb_medecins: 8
+  
+  # Taux d'arrivée par heure (patients/heure)
+  lambda_arrivees:
+    - 2.1  # 00h
+    - 1.8  # 01h
+    - 1.5  # 02h
+    - 1.2  # 03h
+    - 1.0  # 04h
+    - 1.2  # 05h
+    - 1.8  # 06h
+    - 3.2  # 07h
+    - 4.5  # 08h
+    - 5.8  # 09h
+    - 6.2  # 10h
+    - 6.5  # 11h
+    - 6.8  # 12h
+    - 6.5  # 13h
+    - 6.2  # 14h
+    - 5.8  # 15h
+    - 5.5  # 16h
+    - 5.2  # 17h
+    - 5.0  # 18h
+    - 4.5  # 19h
+    - 4.0  # 20h
+    - 3.5  # 21h
+    - 3.0  # 22h
+    - 2.5  # 23h
+  
+  distribution_french:
+    - 0.05  # FRENCH 1
+    - 0.15  # FRENCH 2
+    - 0.45  # FRENCH 3
+    - 0.30  # FRENCH 4
+    - 0.05  # FRENCH 5
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
+  file: "logs/eimlia.log"
+
+# Output
+output:
+  results_dir: "results/"
+  models_dir: "models/"
+  reports_dir: "reports/"
