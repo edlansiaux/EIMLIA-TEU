@@ -1,4 +1,4 @@
-# EIMLIA-3M-TEU Dockerfile
+# EIMLIA-TEU Dockerfile
 # ========================
 
 FROM python:3.10-slim
