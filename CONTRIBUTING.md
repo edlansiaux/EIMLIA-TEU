@@ -128,7 +128,7 @@ eimlia-teu/
 ## Questions?
 
 - Ouvrez une [Discussion](https://github.com/chu-lille/eimlia-teu/discussions)
-- Contactez: eimlia@chu-lille.fr
+- Contactez: edouard1.lansiaux@chu-lille.fr
 
 ## Licence
 
