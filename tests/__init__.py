@@ -1,1 +1,1 @@
-"""Tests EIMLIA-3M-TEU."""
+"""Tests EIMLIA-TEU."""
