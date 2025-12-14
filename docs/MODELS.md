@@ -1,4 +1,4 @@
-# Guide des Modèles EIMLIA-3M-TEU
+# Guide des Modèles EIMLIA-TEU
 
 ## Vue d'ensemble
 
